@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:the_first_flutter/card_screen.dart';
 import 'package:the_first_flutter/profile_screen.dart';
+
+import 'login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,19 +18,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
+      home: LoginScreen(),
       theme: ThemeData(
-        textTheme: const TextTheme(
-          bodyLarge: TextStyle(color: Colors.white),
-          bodyMedium: TextStyle(color: Colors.white),
-          bodySmall: TextStyle(color: Colors.white),
-          titleLarge: TextStyle(color: Colors.white),
-          titleMedium: TextStyle(color: Colors.white),
-          titleSmall: TextStyle(color: Colors.white),
-        ),
-        colorScheme: .fromSeed(seedColor: Colors.red),
-        scaffoldBackgroundColor: Colors.black,
+       colorScheme: .fromSeed(seedColor: Colors.red),
       ),
-      home: ProfileScreen(),
     );
   }
 }

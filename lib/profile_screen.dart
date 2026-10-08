@@ -51,8 +51,7 @@ class ProfileScreen extends StatelessWidget {
                     IconButton(
                       onPressed: () {},
                       icon: const Icon(
-                        Icons.settings_outlined,
-                        color: Colors.white,
+                        Icons.settings_outlined,           color: Colors.white,
                       ),
                     ),
                   ],
@@ -61,6 +60,9 @@ class ProfileScreen extends StatelessWidget {
                 const SizedBox(height: 15),
 
                 // ---------------- RECENTLY PLAYED ----------------
+                Column(children: [
+                  Row(children: [],)
+                ],),  
 
                 Row(
                   children: [
